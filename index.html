@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Team Up (Offline)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <!-- Top Bar: Teams Info -->
+        <div class="team-header">
+            <div class="team team-a">Team A (Red & Yellow)</div>
+            <div class="team team-b">Team B (Green & Blue)</div>
+        </div>
+
+        <!-- Dice Area (Board ke Upar) -->
+        <div class="dice-section">
+            <div id="dice" class="dice">🎲</div>
+            <button id="roll-btn">Roll Dice</button>
+            <!-- Testing ke liye cheat button -->
+            <button id="cheat-btn" style="background-color: #9b59b6; margin-top: 5px; font-size: 12px;">Force 6 (Test)</button>
+            <p id="status">Player 1 (Red) ki baari</p>
+        </div>
+
+        <!-- Ludo Board Area -->
+        <div class="board-container">
+            <!-- Background mein Ludo board ki image -->
+            <div class="ludo-board">
+                <!-- Players ke Tokens -->
+                <div class="token red" id="t-red">1</div>
+                <div class="token green" id="t-green">2</div>
+                <div class="token yellow" id="t-yellow">3</div>
+                <div class="token blue" id="t-blue">4</div>
+            </div>
+        </div>
+        
+        <div id="msg-box"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
